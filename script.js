@@ -5,7 +5,7 @@ filters.forEach(function (filter)
 {
 	filter.addEventListener("click", function ()
 	{
-		const city = filter.dataset.city;
+		const selected = filter.dataset.filter;
 
 		filters.forEach(function (button)
 		{
@@ -16,14 +16,22 @@ filters.forEach(function (filter)
 
 		cards.forEach(function (card)
 		{
-			if (city === "all" || card.dataset.city === city)
+			let visible;
+
+			if (selected === "all")
 			{
-				card.classList.remove("hidden");
+				visible = true;
+			}
+			else if (selected === "group")
+			{
+				visible = card.dataset.group === "inov";
 			}
 			else
 			{
-				card.classList.add("hidden");
+				visible = card.dataset.city === selected;
 			}
+
+			card.classList.toggle("hidden", !visible);
 		});
 	});
 });
