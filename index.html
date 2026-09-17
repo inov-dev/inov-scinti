@@ -4,35 +4,39 @@
 	<meta charset="UTF-8">
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1.0">
-
 	<meta name="description"
-		content="Accès aux résultats des centres INOV">
+		content="Accès aux résultats des centres INOV et partenaires">
 
-	<title>INOV - Accès aux résultats</title>
+	<title>Groupe INOV - Accès aux résultats</title>
 
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<header>
-		<div class="brand">
-			<h1>INOV</h1>
-			<p>Médecine nucléaire</p>
+	<header class="main-header">
+		<div class="header-content">
+			<img
+				src="images/groupe-inov.png"
+				alt="Groupe INOV"
+				class="group-logo">
+
+			<p>Centres de médecine nucléaire</p>
 		</div>
 	</header>
 
 	<main>
 		<section class="intro">
-			<h2>Accès à vos résultats</h2>
+			<h1>Accès à vos résultats</h1>
 
 			<p>
 				Retrouvez les résultats et images de vos examens
-				réalisés dans les centres de médecine nucléaire INOV.
+				réalisés dans les centres INOV et les centres
+				partenaires du Groupe INOV.
 			</p>
 
-			<p>
+			<p class="intro-important">
 				Sélectionnez le centre dans lequel votre examen
-				a été réalisé.
+				a été réalisé pour accéder à votre espace sécurisé.
 			</p>
 		</section>
 
@@ -59,85 +63,226 @@
 		</nav>
 
 		<section class="centers">
+
+			<!-- Bourges -->
+
 			<article class="center-card" data-city="bourges">
+				<div class="logo-zone">
+					<img
+						src="images/chermed.jpeg"
+						alt="CHER MED"
+						class="center-logo chermed-logo">
+				</div>
+
 				<div class="center-content">
-					<span class="activity">TEP</span>
+					<div class="badges">
+						<span class="activity">
+							TEP Scanner
+						</span>
 
-					<h3>Bourges</h3>
+						<span class="network-badge">
+							Partenaire Groupe INOV
+						</span>
+					</div>
 
-					<p>
-						Centre TEP Jacques-Cœur
+					<h2>Bourges</h2>
+
+					<p class="center-name">
+						CHER MED - Site Jacques Cœur
 					</p>
 
-					<p>
-						181 avenue François Mitterrand<br>
-						18000 Bourges
-					</p>
+					<div class="contact">
+						<p>
+							<strong>
+								Unité TEP Scanner Jacques Cœur
+							</strong>
+						</p>
 
-					<a class="results-button"
+						<p>
+							181 avenue François Mitterrand<br>
+							18000 Bourges
+						</p>
+					</div>
+
+					<a
+						class="results-button"
 						href="https://portal.venusshare.com/diffusion/sites/inov/">
 						Accéder aux résultats
 					</a>
 				</div>
 			</article>
 
-			<article class="center-card"
+			<!-- Saint-Doulchard -->
+
+			<article
+				class="center-card"
 				data-city="saint-doulchard">
 
+				<div class="logo-zone">
+					<img
+						src="images/inov.png"
+						alt="INOV"
+						class="center-logo inov-logo">
+				</div>
+
 				<div class="center-content">
-					<span class="activity">Scintigraphie</span>
+					<div class="badges">
+						<span class="activity">
+							Scintigraphie
+						</span>
 
-					<h3>Saint-Doulchard</h3>
+						<span class="network-badge">
+							Centre INOV
+						</span>
+					</div>
 
-					<p>
-						Hôpital privé Guillaume de Varye
+					<h2>Saint-Doulchard</h2>
+
+					<p class="center-name">
+						INOV - Médecine nucléaire
 					</p>
 
-					<a class="results-button"
+					<div class="contact">
+						<p>
+							<strong>
+								Hôpital privé Guillaume de Varye
+							</strong>
+						</p>
+
+						<p>
+							Saint-Doulchard
+						</p>
+					</div>
+
+					<a
+						class="results-button"
 						href="https://portal.venusshare.com/diffusion/sites/inov/">
 						Accéder aux résultats
 					</a>
 				</div>
 			</article>
 
+			<!-- Orléans / Saran -->
+
 			<article class="center-card" data-city="orleans">
+				<div class="logo-zone">
+					<img
+						src="images/inov.png"
+						alt="INOV"
+						class="center-logo inov-logo">
+				</div>
+
 				<div class="center-content">
-					<span class="activity">Médecine nucléaire</span>
+					<div class="badges">
+						<span class="activity">
+							Médecine nucléaire
+						</span>
 
-					<h3>Orléans</h3>
+						<span class="network-badge">
+							Centre partenaire
+						</span>
+					</div>
 
-					<p>
+					<h2>Orléans</h2>
+
+					<p class="center-name">
 						Centre de Saran
 					</p>
 
-					<a class="results-button"
+					<div class="contact">
+						<p>
+							<strong>
+								Centre de médecine nucléaire
+							</strong>
+						</p>
+
+						<p>
+							Saran - Orléans
+						</p>
+					</div>
+
+					<a
+						class="results-button"
 						href="https://portal.venusshare.com/diffusion/sites/saran/">
 						Accéder aux résultats
 					</a>
 				</div>
 			</article>
 
-			<article class="center-card soon" data-city="nevers">
+			<!-- Nevers -->
+
+			<article
+				class="center-card"
+				data-city="nevers">
+
+				<div class="logo-zone">
+					<img
+						src="images/cm2n.jpg"
+						alt="CM2N"
+						class="center-logo cm2n-logo">
+				</div>
+
 				<div class="center-content">
-					<span class="activity">Médecine nucléaire</span>
+					<div class="badges">
+						<span class="activity">
+							Médecine nucléaire
+						</span>
 
-					<h3>Nevers</h3>
+						<span class="network-badge">
+							Partenaire Groupe INOV
+						</span>
 
-					<p>
+						<span class="soon-badge">
+							Prochainement
+						</span>
+					</div>
+
+					<h2>Nevers</h2>
+
+					<p class="center-name">
 						CM2N
 					</p>
+
+					<div class="contact">
+						<p>
+							<strong>
+								Centre de Médecine Nucléaire
+								de la Nièvre
+							</strong>
+						</p>
+
+						<p>
+							Nevers
+						</p>
+					</div>
 
 					<span class="soon-button">
 						Accès aux résultats prochainement
 					</span>
 				</div>
 			</article>
+
+		</section>
+
+		<section class="security">
+			<h2>Accès sécurisé à vos résultats</h2>
+
+			<p>
+				Après avoir sélectionné votre centre, vous serez
+				redirigé vers la plateforme sécurisée de diffusion
+				de vos résultats médicaux.
+			</p>
 		</section>
 	</main>
 
 	<footer>
+		<img
+			src="images/groupe-inov.png"
+			alt="Groupe INOV"
+			class="footer-logo">
+
 		<p>
-			© 2026 INOV - Médecine nucléaire
+			© 2026 Groupe INOV - Médecine nucléaire
 		</p>
 	</footer>
 
