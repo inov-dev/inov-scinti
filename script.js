@@ -7,6 +7,10 @@ filters.forEach(function (filter)
 	{
 		const selected = filter.dataset.filter;
 
+		/*
+		 * Update active filter.
+		 */
+
 		filters.forEach(function (button)
 		{
 			button.classList.remove("active");
@@ -14,9 +18,13 @@ filters.forEach(function (filter)
 
 		filter.classList.add("active");
 
+		/*
+		 * Filter center cards.
+		 */
+
 		cards.forEach(function (card)
 		{
-			let visible;
+			let visible = false;
 
 			if (selected === "all")
 			{
