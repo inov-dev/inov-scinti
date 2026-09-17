@@ -13,6 +13,7 @@
 	--border: #e0e6ea;
 	--soft-blue: #edf5fb;
 	--soft-red: #faeeee;
+	--soft-grey: #f6f8fa;
 	--radius: 16px;
 }
 
@@ -27,6 +28,11 @@ body {
 	color: var(--text);
 	font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/*
+ * Header
+ */
 
 .main-header {
 	background: var(--surface);
@@ -58,12 +64,22 @@ body {
 	text-transform: uppercase;
 }
 
+
+/*
+ * Main
+ */
+
 main {
 	width: 100%;
 	max-width: 1180px;
 	margin: 0 auto;
 	padding: 50px 25px 70px;
 }
+
+
+/*
+ * Introduction
+ */
 
 .intro {
 	max-width: 790px;
@@ -90,6 +106,11 @@ main {
 	font-weight: 600;
 }
 
+
+/*
+ * Filters
+ */
+
 .filters {
 	display: flex;
 	flex-wrap: wrap;
@@ -107,12 +128,17 @@ main {
 	font-size: 14px;
 	font-weight: 600;
 	cursor: pointer;
-	transition: all 0.2s ease;
+	transition:
+		background 0.2s ease,
+		border-color 0.2s ease,
+		color 0.2s ease,
+		transform 0.2s ease;
 }
 
 .filter:hover {
 	border-color: var(--blue);
 	color: var(--blue);
+	transform: translateY(-1px);
 }
 
 .filter.active {
@@ -125,12 +151,22 @@ main {
 	border-color: #cbdbe8;
 }
 
+
+/*
+ * Centers grid
+ */
+
 .centers {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	gap: 28px;
 	align-items: stretch;
 }
+
+
+/*
+ * Center card
+ */
 
 .center-card {
 	display: flex;
@@ -149,6 +185,11 @@ main {
 	transform: translateY(-3px);
 	box-shadow: 0 10px 30px rgba(24, 42, 58, 0.11);
 }
+
+
+/*
+ * Logos
+ */
 
 .logo-zone {
 	display: flex;
@@ -178,6 +219,11 @@ main {
 .cm2n-logo {
 	max-width: 180px;
 }
+
+
+/*
+ * Saran custom branding
+ */
 
 .saran-logo-zone {
 	background:
@@ -210,12 +256,34 @@ main {
 	letter-spacing: 6px;
 }
 
+
+/*
+ * Card content
+ */
+
 .center-content {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
 	padding: 30px;
 }
+
+.center-card h2 {
+	margin: 0 0 7px;
+	font-size: 28px;
+	line-height: 1.2;
+}
+
+.center-name {
+	margin: 0;
+	color: var(--muted);
+	font-size: 15px;
+}
+
+
+/*
+ * Badges
+ */
 
 .badges {
 	display: flex;
@@ -258,17 +326,10 @@ main {
 	color: var(--red);
 }
 
-.center-card h2 {
-	margin: 0 0 7px;
-	font-size: 28px;
-	line-height: 1.2;
-}
 
-.center-name {
-	margin: 0;
-	color: var(--muted);
-	font-size: 15px;
-}
+/*
+ * Contact section
+ */
 
 .contact {
 	margin: 23px 0 28px;
@@ -283,9 +344,126 @@ main {
 	line-height: 1.6;
 }
 
-.contact strong {
-	color: var(--text);
+.contact-main {
+	margin-bottom: 18px;
 }
+
+.contact-title {
+	color: var(--text) !important;
+	font-weight: 700;
+}
+
+.opening-hours {
+	margin-top: 12px !important;
+	color: var(--text) !important;
+	font-weight: 600;
+}
+
+
+/*
+ * Contact cards
+ */
+
+.contact-grid {
+	display: grid;
+	gap: 10px;
+	margin-top: 15px;
+}
+
+.contact-item {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 13px 15px;
+	border: 1px solid #edf0f2;
+	border-radius: 9px;
+	background: var(--soft-grey);
+}
+
+.contact-label {
+	color: var(--text);
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+}
+
+.contact-item a {
+	color: var(--blue-dark);
+	font-size: 14px;
+	line-height: 1.45;
+	text-decoration: none;
+	word-break: break-word;
+}
+
+.contact-item a:hover {
+	text-decoration: underline;
+}
+
+
+/*
+ * Professional contacts
+ */
+
+.professional-contacts {
+	margin-top: 22px;
+	padding-top: 18px;
+	border-top: 1px solid var(--border);
+}
+
+.professional-title {
+	margin: 0 !important;
+	color: var(--text) !important;
+	font-size: 13px !important;
+	font-weight: 700;
+}
+
+.ms-sante {
+	border-color: #d7e8f4;
+	background: var(--soft-blue);
+}
+
+.ms-sante .contact-label {
+	color: var(--blue-dark);
+}
+
+
+/*
+ * Doctors
+ */
+
+.doctors {
+	margin-top: 18px;
+	padding: 13px 15px;
+	border-left: 3px solid var(--blue);
+	border-radius: 0 9px 9px 0;
+	background: var(--soft-blue);
+}
+
+.doctors p {
+	margin: 8px 0 0;
+	color: var(--text);
+	line-height: 1.6;
+}
+
+
+/*
+ * Accessibility
+ */
+
+.accessibility {
+	margin-top: 16px !important;
+	padding: 10px 12px;
+	border-radius: 8px;
+	background: var(--soft-grey);
+	color: var(--text) !important;
+	font-size: 13px !important;
+}
+
+
+/*
+ * Results buttons
+ */
 
 .results-button {
 	display: block;
@@ -308,6 +486,16 @@ main {
 	transform: translateY(-1px);
 }
 
+.results-button:focus {
+	outline: 3px solid rgba(54, 127, 189, 0.25);
+	outline-offset: 3px;
+}
+
+
+/*
+ * Coming soon
+ */
+
 .soon-button {
 	display: block;
 	margin-top: auto;
@@ -319,6 +507,11 @@ main {
 	font-weight: 700;
 	text-align: center;
 }
+
+
+/*
+ * Security
+ */
 
 .security {
 	max-width: 720px;
@@ -341,6 +534,11 @@ main {
 	line-height: 1.6;
 }
 
+
+/*
+ * Footer
+ */
+
 footer {
 	padding: 28px 20px;
 	background: var(--surface);
@@ -362,9 +560,19 @@ footer p {
 	font-size: 12px;
 }
 
+
+/*
+ * Filtering
+ */
+
 .hidden {
 	display: none;
 }
+
+
+/*
+ * Tablet / mobile
+ */
 
 @media (max-width: 760px) {
 	main {
@@ -395,19 +603,45 @@ footer p {
 		padding: 25px;
 	}
 
+	.center-card h2 {
+		font-size: 25px;
+	}
+
 	.filters {
 		margin: 30px 0;
 	}
 }
 
+
+/*
+ * Small mobile
+ */
+
 @media (max-width: 480px) {
+	.header-content {
+		padding: 17px 15px;
+	}
+
 	.group-logo {
 		width: 190px;
 		height: 80px;
 	}
 
+	main {
+		padding-right: 14px;
+		padding-left: 14px;
+	}
+
 	.intro h1 {
 		font-size: 26px;
+	}
+
+	.intro p {
+		font-size: 15px;
+	}
+
+	.filters {
+		gap: 7px;
 	}
 
 	.filter {
@@ -435,5 +669,13 @@ footer p {
 
 	.center-content {
 		padding: 22px;
+	}
+
+	.contact-item {
+		padding: 12px;
+	}
+
+	.contact-item a {
+		font-size: 13px;
 	}
 }
