@@ -121,6 +121,10 @@ main {
 	color: #ffffff;
 }
 
+.group-filter {
+	border-color: #cbdbe8;
+}
+
 .centers {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -175,6 +179,37 @@ main {
 	max-width: 180px;
 }
 
+.saran-logo-zone {
+	background:
+		linear-gradient(
+			135deg,
+			#ffffff 0%,
+			#f4f8fb 100%
+		);
+}
+
+.saran-brand {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	gap: 15px;
+}
+
+.saran-inov {
+	color: var(--blue);
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 62px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.saran-city {
+	color: var(--red);
+	font-size: 25px;
+	font-weight: 700;
+	letter-spacing: 6px;
+}
+
 .center-content {
 	display: flex;
 	flex: 1;
@@ -192,6 +227,7 @@ main {
 
 .activity,
 .network-badge,
+.partner-badge,
 .soon-badge {
 	display: inline-block;
 	padding: 6px 11px;
@@ -208,6 +244,11 @@ main {
 }
 
 .network-badge {
+	background: #eef3f7;
+	color: var(--blue-dark);
+}
+
+.partner-badge {
 	background: #f0f2f4;
 	color: #586873;
 }
@@ -342,12 +383,16 @@ footer p {
 		height: 180px;
 	}
 
-	.center-content {
-		padding: 25px;
+	.saran-inov {
+		font-size: 50px;
 	}
 
-	.center-card h2 {
-		font-size: 25px;
+	.saran-city {
+		font-size: 20px;
+	}
+
+	.center-content {
+		padding: 25px;
 	}
 
 	.filters {
@@ -356,10 +401,6 @@ footer p {
 }
 
 @media (max-width: 480px) {
-	.header-content {
-		padding: 17px 15px;
-	}
-
 	.group-logo {
 		width: 190px;
 		height: 80px;
@@ -376,7 +417,20 @@ footer p {
 
 	.logo-zone {
 		height: 155px;
-		padding: 20px 30px;
+		padding: 20px;
+	}
+
+	.saran-brand {
+		gap: 10px;
+	}
+
+	.saran-inov {
+		font-size: 42px;
+	}
+
+	.saran-city {
+		font-size: 17px;
+		letter-spacing: 4px;
 	}
 
 	.center-content {
