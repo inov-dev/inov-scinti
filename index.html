@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+
+	<meta name="description"
+		content="Accès aux résultats des centres INOV">
+
+	<title>INOV - Accès aux résultats</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<div class="brand">
+			<h1>INOV</h1>
+			<p>Médecine nucléaire</p>
+		</div>
+	</header>
+
+	<main>
+		<section class="intro">
+			<h2>Accès à vos résultats</h2>
+
+			<p>
+				Retrouvez les résultats et images de vos examens
+				réalisés dans les centres de médecine nucléaire INOV.
+			</p>
+
+			<p>
+				Sélectionnez le centre dans lequel votre examen
+				a été réalisé.
+			</p>
+		</section>
+
+		<nav class="filters" aria-label="Filtrer les centres">
+			<button class="filter active" data-city="all">
+				Tous
+			</button>
+
+			<button class="filter" data-city="bourges">
+				Bourges
+			</button>
+
+			<button class="filter" data-city="saint-doulchard">
+				Saint-Doulchard
+			</button>
+
+			<button class="filter" data-city="orleans">
+				Orléans
+			</button>
+
+			<button class="filter" data-city="nevers">
+				Nevers
+			</button>
+		</nav>
+
+		<section class="centers">
+			<article class="center-card" data-city="bourges">
+				<div class="center-content">
+					<span class="activity">TEP</span>
+
+					<h3>Bourges</h3>
+
+					<p>
+						Centre TEP Jacques-Cœur
+					</p>
+
+					<p>
+						181 avenue François Mitterrand<br>
+						18000 Bourges
+					</p>
+
+					<a class="results-button"
+						href="https://portal.venusshare.com/diffusion/sites/inov/">
+						Accéder aux résultats
+					</a>
+				</div>
+			</article>
+
+			<article class="center-card"
+				data-city="saint-doulchard">
+
+				<div class="center-content">
+					<span class="activity">Scintigraphie</span>
+
+					<h3>Saint-Doulchard</h3>
+
+					<p>
+						Hôpital privé Guillaume de Varye
+					</p>
+
+					<a class="results-button"
+						href="https://portal.venusshare.com/diffusion/sites/inov/">
+						Accéder aux résultats
+					</a>
+				</div>
+			</article>
+
+			<article class="center-card" data-city="orleans">
+				<div class="center-content">
+					<span class="activity">Médecine nucléaire</span>
+
+					<h3>Orléans</h3>
+
+					<p>
+						Centre de Saran
+					</p>
+
+					<a class="results-button"
+						href="https://portal.venusshare.com/diffusion/sites/saran/">
+						Accéder aux résultats
+					</a>
+				</div>
+			</article>
+
+			<article class="center-card soon" data-city="nevers">
+				<div class="center-content">
+					<span class="activity">Médecine nucléaire</span>
+
+					<h3>Nevers</h3>
+
+					<p>
+						CM2N
+					</p>
+
+					<span class="soon-button">
+						Accès aux résultats prochainement
+					</span>
+				</div>
+			</article>
+		</section>
+	</main>
+
+	<footer>
+		<p>
+			© 2026 INOV - Médecine nucléaire
+		</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
