@@ -41,23 +41,27 @@
 		</section>
 
 		<nav class="filters" aria-label="Filtrer les centres">
-			<button class="filter active" data-city="all">
+			<button class="filter active" data-filter="all">
 				Tous
 			</button>
 
-			<button class="filter" data-city="bourges">
+			<button class="filter group-filter" data-filter="group">
+				Groupe INOV
+			</button>
+
+			<button class="filter" data-filter="bourges">
 				Bourges
 			</button>
 
-			<button class="filter" data-city="saint-doulchard">
+			<button class="filter" data-filter="saint-doulchard">
 				Saint-Doulchard
 			</button>
 
-			<button class="filter" data-city="orleans">
+			<button class="filter" data-filter="orleans">
 				Orléans
 			</button>
 
-			<button class="filter" data-city="nevers">
+			<button class="filter" data-filter="nevers">
 				Nevers
 			</button>
 		</nav>
@@ -66,7 +70,11 @@
 
 			<!-- Bourges -->
 
-			<article class="center-card" data-city="bourges">
+			<article
+				class="center-card"
+				data-city="bourges"
+				data-group="inov">
+
 				<div class="logo-zone">
 					<img
 						src="images/chermed.jpeg"
@@ -81,7 +89,7 @@
 						</span>
 
 						<span class="network-badge">
-							Partenaire Groupe INOV
+							Groupe INOV
 						</span>
 					</div>
 
@@ -116,7 +124,8 @@
 
 			<article
 				class="center-card"
-				data-city="saint-doulchard">
+				data-city="saint-doulchard"
+				data-group="inov">
 
 				<div class="logo-zone">
 					<img
@@ -132,7 +141,7 @@
 						</span>
 
 						<span class="network-badge">
-							Centre INOV
+							Groupe INOV
 						</span>
 					</div>
 
@@ -164,12 +173,16 @@
 
 			<!-- Orléans / Saran -->
 
-			<article class="center-card" data-city="orleans">
-				<div class="logo-zone">
-					<img
-						src="images/inov.png"
-						alt="INOV"
-						class="center-logo inov-logo">
+			<article
+				class="center-card"
+				data-city="orleans"
+				data-group="partner">
+
+				<div class="logo-zone saran-logo-zone">
+					<div class="saran-brand">
+						<span class="saran-inov">INOV</span>
+						<span class="saran-city">SARAN</span>
+					</div>
 				</div>
 
 				<div class="center-content">
@@ -178,7 +191,7 @@
 							Médecine nucléaire
 						</span>
 
-						<span class="network-badge">
+						<span class="partner-badge">
 							Centre partenaire
 						</span>
 					</div>
@@ -186,7 +199,7 @@
 					<h2>Orléans</h2>
 
 					<p class="center-name">
-						Centre de Saran
+						INOV Saran
 					</p>
 
 					<div class="contact">
@@ -213,7 +226,8 @@
 
 			<article
 				class="center-card"
-				data-city="nevers">
+				data-city="nevers"
+				data-group="inov">
 
 				<div class="logo-zone">
 					<img
@@ -229,7 +243,7 @@
 						</span>
 
 						<span class="network-badge">
-							Partenaire Groupe INOV
+							Groupe INOV
 						</span>
 
 						<span class="soon-badge">
@@ -251,9 +265,7 @@
 							</strong>
 						</p>
 
-						<p>
-							Nevers
-						</p>
+						<p>Nevers</p>
 					</div>
 
 					<span class="soon-button">
