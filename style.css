@@ -107,6 +107,112 @@ main {
 }
 
 
+
+/*
+ * Access help
+ */
+
+.access-help-section {
+	max-width: 790px;
+	margin: 28px auto 0;
+}
+
+.access-help {
+	overflow: hidden;
+	border: 1px solid #cbdbe8;
+	border-radius: 12px;
+	background: var(--surface);
+	box-shadow: 0 4px 14px rgba(24, 42, 58, 0.05);
+}
+
+.access-help summary {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 18px;
+	padding: 17px 20px;
+	color: var(--blue-dark);
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+	list-style: none;
+}
+
+.access-help summary::-webkit-details-marker {
+	display: none;
+}
+
+.access-help summary::after {
+	content: "+";
+	flex: 0 0 auto;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1;
+}
+
+.access-help[open] summary {
+	border-bottom: 1px solid var(--border);
+	background: var(--soft-blue);
+}
+
+.access-help[open] summary::after {
+	content: "−";
+}
+
+.access-help summary:focus-visible {
+	outline: 3px solid rgba(54, 127, 189, 0.25);
+	outline-offset: -3px;
+}
+
+.access-help-content {
+	padding: 20px;
+}
+
+.access-help-content p {
+	margin: 0 0 13px;
+	color: var(--muted);
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+.access-help-content p:last-of-type {
+	margin-bottom: 18px;
+}
+
+.access-help-content ul {
+	margin: 0 0 16px;
+	padding-left: 22px;
+	color: var(--text);
+	font-size: 15px;
+	line-height: 1.7;
+}
+
+.access-help-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.access-help-actions a {
+	display: inline-block;
+	padding: 11px 15px;
+	border: 1px solid var(--blue);
+	border-radius: 8px;
+	color: var(--blue-dark);
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	transition:
+		background 0.2s ease,
+		color 0.2s ease;
+}
+
+.access-help-actions a:hover {
+	background: var(--blue);
+	color: #ffffff;
+}
+
+
 /*
  * Filters
  */
