@@ -213,6 +213,56 @@ main {
 }
 
 
+
+/*
+ * Featured INOV results access
+ */
+
+.featured-results {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 28px;
+	max-width: 790px;
+	margin: 22px auto 0;
+	padding: 22px;
+	border: 1px solid #cbdbe8;
+	border-radius: 12px;
+	background: var(--surface);
+	box-shadow: 0 4px 14px rgba(24, 42, 58, 0.05);
+}
+
+.featured-results-content {
+	flex: 1;
+}
+
+.featured-results-eyebrow {
+	margin: 0 0 5px;
+	color: var(--blue-dark);
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.7px;
+	text-transform: uppercase;
+}
+
+.featured-results h2 {
+	margin: 0 0 7px;
+	font-size: 21px;
+}
+
+.featured-results-content > p:last-child {
+	margin: 0;
+	color: var(--muted);
+	font-size: 14px;
+	line-height: 1.55;
+}
+
+.primary-results-button {
+	flex: 0 0 230px;
+	margin-top: 0;
+}
+
+
 /*
  * Filters
  */
@@ -534,6 +584,93 @@ main {
 }
 
 
+
+.mssante-contact {
+	overflow: visible;
+}
+
+.mssante-tooltip {
+	position: relative;
+}
+
+.mssante-tooltip summary {
+	display: inline-flex;
+	align-items: center;
+	gap: 9px;
+	color: var(--blue-dark);
+	font-size: 14px;
+	font-weight: 700;
+	cursor: pointer;
+	list-style: none;
+}
+
+.mssante-tooltip summary::-webkit-details-marker {
+	display: none;
+}
+
+.mssante-tooltip summary svg {
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	border-radius: 50%;
+	background: var(--blue);
+	stroke: #ffffff;
+	stroke-width: 1.8;
+	fill: none;
+}
+
+.mssante-tooltip summary:focus-visible {
+	outline: 3px solid rgba(54, 127, 189, 0.25);
+	outline-offset: 3px;
+}
+
+.mssante-tooltip-content {
+	position: absolute;
+	z-index: 5;
+	top: calc(100% + 9px);
+	left: 0;
+	width: min(330px, calc(100vw - 64px));
+	padding: 14px;
+	border: 1px solid #bfd7e8;
+	border-radius: 9px;
+	background: #ffffff;
+	box-shadow: 0 10px 28px rgba(24, 42, 58, 0.17);
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(-4px);
+	transition:
+		opacity 0.18s ease,
+		transform 0.18s ease;
+}
+
+.mssante-tooltip-content::before {
+	content: "";
+	position: absolute;
+	top: -6px;
+	left: 13px;
+	width: 10px;
+	height: 10px;
+	border-top: 1px solid #bfd7e8;
+	border-left: 1px solid #bfd7e8;
+	background: #ffffff;
+	transform: rotate(45deg);
+}
+
+.mssante-tooltip:hover .mssante-tooltip-content,
+.mssante-tooltip:focus-within .mssante-tooltip-content,
+.mssante-tooltip[open] .mssante-tooltip-content {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateY(0);
+}
+
+.mssante-tooltip-content p {
+	margin: 9px 0 0;
+	color: var(--muted);
+	font-size: 13px;
+	line-height: 1.5;
+}
+
 /*
  * Doctors
  */
@@ -689,6 +826,16 @@ footer p {
 		font-size: 28px;
 	}
 
+	.featured-results {
+		align-items: stretch;
+		flex-direction: column;
+		gap: 17px;
+	}
+
+	.primary-results-button {
+		flex-basis: auto;
+	}
+
 	.centers {
 		grid-template-columns: 1fr;
 	}
@@ -783,5 +930,12 @@ footer p {
 
 	.contact-item a {
 		font-size: 13px;
+	}
+
+	.mssante-tooltip-content {
+		position: static;
+		width: 100%;
+		margin-top: 10px;
+		transform: none;
 	}
 }
